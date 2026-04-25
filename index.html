@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    } @font-face {
+        font-family: Candara;
+        src: url("Portfolioassignment-main 2/Candara.ttf");
+    } h1 {
+        font: 48pt/1.4em Satisfy;
+        text-align: center;
+        text-shadow: 1px 2px 3px rgba(0,176,173,1.00);
+        margin: 24px 0;
+    } #textbox {
+        width: 1024px;
+        height: 928px;
+        margin: 0 auto;
+        background: whitesmoke;
+        box-shadow: 2px 3px 6px gainsboro;
+        border: 1px solid gainsboro;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		align-content: flex-start;
+    } figure {
+        margin: 24px;
+        width: 200px;
+        text-align: center;
+    } img, .zoom {
+        width: 200px;
+        height: 200px;
+        border: 1px solid gray;
+        box-shadow: 2px 3px 6px gray;
+        transition: transform 0.5s;
+    } figcaption {
+        font: 12pt/1.4em Candara;
+        margin-top: 3px;
+    } .zoom {
+        background: url("Portfolioassignment-main 2/thumb-tulip.jpg");
+        background-size: 100%;
+        background-position: center;
+    } img:hover {
+        transform: scale(1.03);
+        transition: transform 0.5s;
+    } .zoom:hover {
+        background-size: 105%;
+        transition: background-size 0.5s;
+    }  button {
+        width: 100px;
+        height: 40px;
+        background: lightgreen;
+        border-radius: 6px;
+        display: block;
+        margin: 24px auto;
+    } 
+</style>
+<script language="javascript" type="text/javascript">
+	function printPage() { 
+		window.print();
+	}
+</script>
+</head>
+
+<body>
+    <h1>Portfolio</h1>
+    <div id="textbox">
+        <!-- Leaves photo -->
+        <figure>
+			<a href="Portfolioassignment-main 2/IMG_0998.png">
+            <img src="Portfolioassignment-main 2/thumb-daisy.png" />
+            </a>
+            <figcaption>
+            Princess Daisy artwork for contest
+            </figcaption>
+        </figure>
+		 <figure>
+			<a href="Portfolioassignment-main 2/IMG_6975.png">
+            <img src="Portfolioassignment-main 2/splashin-logo.png" />
+            </a>
+            <figcaption>
+            Soda brand logo
+            </figcaption>
+        </figure>
+		 <figure>
+			<a href="Portfolioassignment-main 2/IMG_6976.png">
+            <img src="Portfolioassignment-main 2/thumb-poster.png" />
+            </a>
+            <figcaption>
+            Music tour poster for factitious band
+            </figcaption>
+    </div> 
+</body> 
+<body>
+    <div id="page">
+        <button onClick="printPage()">Print Page</button>
+    </div>
+</body>
+</html>
